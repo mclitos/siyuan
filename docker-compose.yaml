@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  main:
+    image: b3log/siyuan
+    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=unCodigoSeguro'] #POner un codigo de acceso
+    ports:
+      - 3030:6806
+    volumes:
+      - /siyuan/workspace:/siyuan/workspace
+    restart: unless-stopped
+    environment:
+      # Se puede encontrar una lista de identificadores de zona horaria en https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+      - TZ=America/Costa_Rica
+      - PUID=1000  
+      - PGID=1000  
