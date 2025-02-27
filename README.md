@@ -9,3 +9,7 @@ cd siyuan
 ```
 docker compose up -d
 ```
+
+
+Fuente: https://github.com/siyuan-note/siyuan?tab=readme-ov-file  /
+https://b3log.org/siyuan/en/
